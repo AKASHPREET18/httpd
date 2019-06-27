@@ -11,10 +11,6 @@ spec:
     spec:
       containers:
         - name: front-end
-          image: httpd 
+          image: httpd
           ports:
             - containerPort: 80
-- name: Copy file with owner and permissions
-  copy:
-    src: website/
-    dest: /usr/local/apache2/htdocs/
