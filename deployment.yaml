@@ -12,6 +12,6 @@ spec:
       containers:
         - name: front-end
           image: httpd
-          cp website/ /usr/local/apache2/htdocs/
+          copy: website/ /usr/local/apache2/htdocs/
           ports:
             - containerPort: 80
